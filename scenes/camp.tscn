@@ -1,0 +1,46 @@
+[gd_scene format=3 uid="uid://c5jeslg0jqsrr"]
+
+[ext_resource type="Texture2D" uid="uid://cnmdrmc6m2sms" path="res://assets/sprite.png" id="1_wk8fr"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nfbfs"]
+atlas = ExtResource("1_wk8fr")
+region = Rect2(32, 36, 16, 12)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c5nam"]
+atlas = ExtResource("1_wk8fr")
+region = Rect2(48, 36, 16, 12)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nsjlq"]
+atlas = ExtResource("1_wk8fr")
+region = Rect2(64, 36, 16, 12)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_2qu55"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nfbfs")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c5nam")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nsjlq")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_wk8fr"]
+load_path = "res://.godot/imported/light.png-87539b10c4b4cebc046b6b91ffea6f69.ctex"
+
+[node name="Camp" type="Node2D" unique_id=430465873]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1002344119]
+sprite_frames = SubResource("SpriteFrames_2qu55")
+autoplay = "default"
+frame = 1
+frame_progress = 0.6833947
+
+[node name="PointLight2D" type="PointLight2D" parent="." unique_id=1612929964]
+texture = SubResource("CompressedTexture2D_wk8fr")
