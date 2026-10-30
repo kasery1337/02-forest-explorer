@@ -2,6 +2,8 @@
 
 [ext_resource type="Texture2D" uid="uid://5q7vte607ebm" path="res://assets/player.png" id="1_3vyb7"]
 [ext_resource type="Script" uid="uid://brgp5kxrhn70b" path="res://script/player.gd" id="1_g2els"]
+[ext_resource type="Resource" uid="uid://dr462jhouctq8" path="res://resources/axe.tres" id="2_qhqgy"]
+[ext_resource type="PackedScene" uid="uid://cg8b7c0yqcakl" path="res://resources/item_world.tscn" id="3_dqkch"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_fvsx4"]
 radius = 4.0
@@ -80,9 +82,12 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="Player" type="CharacterBody2D" unique_id=1959574314 node_paths=PackedStringArray("anim")]
+[node name="Player" type="CharacterBody2D" unique_id=1959574314 node_paths=PackedStringArray("anim", "hand")]
 script = ExtResource("1_g2els")
 anim = NodePath("AnimatedSprite2D")
+item_resources = ExtResource("2_qhqgy")
+hand = NodePath("Sprite2D")
+item_world_scene = ExtResource("3_dqkch")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1032488730]
 shape = SubResource("CircleShape2D_fvsx4")
@@ -112,3 +117,6 @@ grow_vertical = 2
 scale = Vector2(0.525, 0.525)
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2094617571]
+position = Vector2(-4, 0)

@@ -3,8 +3,8 @@
 [ext_resource type="PackedScene" uid="uid://dioiluvn8qqg4" path="res://scenes/ui.tscn" id="1_oiidf"]
 [ext_resource type="TileSet" uid="uid://b24cvcb8uy13m" path="res://assets/new_tile_set.tres" id="2_8fbpv"]
 [ext_resource type="PackedScene" uid="uid://chk6ofce30xd5" path="res://scenes/player.tscn" id="3_qby8i"]
-[ext_resource type="Script" uid="uid://dbrhh1cbtjsgq" path="res://scenes/death_zone.gd" id="4_kqvep"]
-[ext_resource type="Script" uid="uid://dv1jpuv8a755t" path="res://scenes/portal2.gd" id="5_oiidf"]
+[ext_resource type="Script" uid="uid://dbrhh1cbtjsgq" path="res://script/death_zone.gd" id="4_kqvep"]
+[ext_resource type="Script" uid="uid://dv1jpuv8a755t" path="res://script/portal2.gd" id="5_oiidf"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fvsx4"]
 size = Vector2(31, 14)

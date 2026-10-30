@@ -1,6 +1,7 @@
 [gd_resource type="TileSet" format=3 uid="uid://b24cvcb8uy13m"]
 
 [ext_resource type="Texture2D" uid="uid://cnmdrmc6m2sms" path="res://assets/sprite.png" id="1_6buih"]
+[ext_resource type="PackedScene" uid="uid://dxpk2b6loa11b" path="res://scenes/tree.tscn" id="2_6n06g"]
 [ext_resource type="PackedScene" uid="uid://c5jeslg0jqsrr" path="res://scenes/camp.tscn" id="2_hqaa3"]
 [ext_resource type="PackedScene" uid="uid://cnwd1rv6xndax" path="res://scenes/mushrooms.tscn" id="3_btyyc"]
 
@@ -24,6 +25,7 @@ texture = ExtResource("1_6buih")
 1:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -8, 16, -8, 16, 8, -8, 8, -16, 8)
 
 [sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_btyyc"]
+scenes/1/scene = ExtResource("2_6n06g")
 scenes/2/scene = ExtResource("2_hqaa3")
 scenes/3/scene = ExtResource("3_btyyc")
 

@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://b0evvhwn1bt1s" path="res://mushrooms.gd" id="1_gjkia"]
 [ext_resource type="Texture2D" uid="uid://cnmdrmc6m2sms" path="res://assets/sprite.png" id="2_g5jiy"]
+[ext_resource type="Resource" uid="uid://1b6xjm3bhi2x" path="res://resources/mushroom.tres" id="2_y81ac"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_fvsx4"]
 atlas = ExtResource("2_g5jiy")
@@ -11,6 +12,7 @@ region = Rect2(5, 21, 6, 6)
 
 [node name="mushrooms" type="Node2D" unique_id=1717127605]
 script = ExtResource("1_gjkia")
+item_resources = ExtResource("2_y81ac")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1584069002]
 texture = SubResource("AtlasTexture_fvsx4")
